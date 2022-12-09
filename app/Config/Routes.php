@@ -37,6 +37,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/inicio', 'Home::inicio');
+$routes->post('/login', 'Home::login');
+$routes->get('/salir', 'Home::salir');
+
+
+/* envio del formulario por post en login */
 
 
 /*

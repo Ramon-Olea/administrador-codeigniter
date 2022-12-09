@@ -22,19 +22,19 @@
         <div class="login">
 
             <div class="login-content">
-                <form action="<?= base_url('/login')?>" method="POST" >
+                <form action="<?php echo base_url('/login')?>" method="post" >
                     <h1 class="text-center">Inicio </h1>
                     <div class="text-white text-opacity-50 text-center mb-4">
                         For your protection, please verify your identity.
                     </div>
                     <div class="mb-3 text-center">
                         <label class="form-label">Usuario <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control form-control-lg bg-white bg-opacity-5" value="" placeholder="" required/>
+                        <input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="usuario" placeholder="" required/>
                     </div>
                     <div class="mb-3 text-center">
                             <label class="form-label">Contraseña <span class="text-danger">*</span></label>
                           <!--   <a href="#" class="ms-auto text-white text-decoration-none text-opacity-50">Forgot password?</a> -->
-                        <input type="password" class="form-control form-control-lg bg-white bg-opacity-5" value="" placeholder="" required/>
+                        <input type="password" class="form-control form-control-lg bg-white bg-opacity-5" name="contra" placeholder="" required/>
                     </div>
                    <!--  <div class="mb-3">
                         <div class="form-check">

@@ -188,7 +188,7 @@
 <div class="menu-img online">
 <img src="assets/img/user/profile.jpg" height="60px" />
 </div>
-<div class="menu-text d-sm-block d-none"><span class="__cf_email__" data-cfemail="95e0e6f0e7fbf4f8f0d5f4f6f6fae0fbe1bbf6faf8">[email&#160;protected]</span></div>
+<div class="menu-text d-sm-block d-none"><span ><?= session('usuario')?></span></div>
 </a>
 <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
 <a class="dropdown-item d-flex align-items-center" href="#">PROFILE <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
@@ -196,7 +196,7 @@
 <a class="dropdown-item d-flex align-items-center" href="#">CALENDAR <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
 <a class="dropdown-item d-flex align-items-center" href="#">SETTINGS <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
 <div class="dropdown-divider"></div>
-<a class="dropdown-item d-flex align-items-center" href="#">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="<?php echo base_url('/salir')?>">SALIR <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
 </div>
 </div>
 </div>
@@ -1430,10 +1430,11 @@ $30,402 received from Paypal
 </div>
 
 
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor.min.js" type="d2e5da86ab03acce7fcb6270-text/javascript"></script>
-<script src="assets/js/app.min.js" type="d2e5da86ab03acce7fcb6270-text/javascript"></script>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="assets/js/vendor.min.js" type="4300b5c898cd575308165a4f-text/javascript"></script>
+<script src="assets/js/app.min.js" type="4300b5c898cd575308165a4f-text/javascript"></script>
 
-
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="4300b5c898cd575308165a4f-|49" defer=""></script>
 <script src="assets/plugins/jvectormap-next/jquery-jvectormap.min.js" type="d2e5da86ab03acce7fcb6270-text/javascript"></script>
 <script src="assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js" type="d2e5da86ab03acce7fcb6270-text/javascript"></script>
 <script src="assets/plugins/apexcharts/dist/apexcharts.min.js" type="d2e5da86ab03acce7fcb6270-text/javascript"></script>
@@ -1449,7 +1450,6 @@ $30,402 received from Paypal
 		ga('send', 'pageview');
 
 	</script>
-<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d2e5da86ab03acce7fcb6270-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d3477fc4ece426c","version":"2021.12.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
 </body>
 
 <!-- Mirrored from seantheme.com/hud/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 21:09:30 GMT -->

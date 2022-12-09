@@ -20,8 +20,8 @@ class TUsuarios extends Migration
                 'constraint' => '255',
             ],
             'contra' => [
-                'type'       => 'VARCHAR',
-                'constraint' => '255',
+                'type'       => 'TEXT',
+                'null' => true,
             ],
             'rol' => [
                 'type'       => 'VARCHAR',
@@ -29,11 +29,11 @@ class TUsuarios extends Migration
             ],
         ]);
         $this->forge->addKey('id_usuario', true);
-        $this->forge->createTable('t_usuario');
+        $this->forge->createTable('t_usuarios');
     }
 
     public function down()
     {
-        $this->forge->dropTable('t_usuario');
+        $this->forge->dropTable('t_usuarios');
     }
 }

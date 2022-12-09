@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://192.168.31.46/Desarrollo/public/';
+    public $baseURL = 'http://192.168.31.46/administrador-codeigniter/public/';
 
     /**
      * --------------------------------------------------------------------------
