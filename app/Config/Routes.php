@@ -37,11 +37,37 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/inicio', 'Home::inicio');
-$routes->post('/login', 'Home::login');
 $routes->get('/salir', 'Home::salir');
-
-
 /* envio del formulario por post en login */
+$routes->post('/login', 'Home::login');
+
+/* prueba de p hp puro RMN */
+$routes->post('/datos', 'Home::datos');
+
+
+
+/* USUARIOS RUTAS */
+$routes->get('/usuarios', 'Home::usuarios');
+$routes->get('/usercrear', 'Home::usercrear');
+$routes->post('/registrar', 'Home::registrar');
+$routes->post('/useractualizar', 'Home::useractualizar');
+$routes->post('/actualizar', 'Home::actualizar');
+
+$routes->get('/obteneruser/(:any)', 'Home::obteneruser/$1');
+$routes->get('/usereliminar/(:any)', 'Home::usereliminar/$1');
+
+
+
+
+/* FIN RUTAS USUARIOS */
+
+/* RUTAS CLIENTES */
+$routes->get('/clientes', 'Asas::clientes');
+
+
+
+/* FIN RUTAS CLIENTES */
+
 
 
 /*
